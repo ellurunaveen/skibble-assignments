@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+    
+         function mat(){
+            const A=document.getElementById("mat");
+                 if(A.innerHTML.length===0){
+                     A.innerHTML="Tim Berners-Lee The first version of HTML was written by Tim Berners-Lee in 1993. Since then, there have been many different versions of HTML. The most widely used version throughout the 2000's was HTML 4.01, which became an official standard in December 1999.";
+                 } else{
+                     A.innerHTML=""
+                 }
+                 }
+                
+                 function matter(){
+            const A=document.getElementById("matter");
+                 if(A.innerHTML.length===0){
+                     A.innerHTML="CERN 1989: Tim Berners-Lee invents the Web with HTML as its publishing language. The World Wide Web began life in the place where you would least expect it: at CERN, the European Laboratory for Particle Physics in Geneva, Switzerland.";
+                 } else{
+                     A.innerHTML=""
+                 }
+                 }
+                 function ext(){
+            const A=document.getElementById("ext");
+                 if(A.innerHTML.length===0){
+                     A.innerHTML="It should take you one to two weeks to get the full gist of HTML, and about a month of practice to get comfortable with the language. The key is to apply your learning by working on projects.";
+                 } else{
+                     A.innerHTML=""
+                 }
+                 }
+                
+    </script>
+    <style>
+        body{
+            margin-left: 500px;
+            margin-top: 100px;
+            
+        }
+        h1{
+            margin-left: 220px;
+            margin-bottom: 60px;
+        }
+            .faq{
+                display:flex;
+                z-index: 100 ;
+                border:3px solid rgb(243, 242, 242);
+                padding: 5px;
+                background-color: grey;
+                color: black;
+                width: 500px;
+                align-items: center;
+                border-radius: 30px;
+                margin-right: 50px;
+                
+            }
+            
+            .plus{
+                margin-left: 270px;
+                font-weight: 800;
+                font-size: 24px;
+                background-color: gray;
+            }
+            
+            .pluss{
+                margin-left: 280px;
+                font-weight: 800;
+                font-size: 24px;
+                background-color: gray;
+            }
+            .ans{
+                width: 500px;
+            }
+            .p{
+                margin-left: 220px;
+                font-weight: 800;
+                font-size: 24px;
+                background-color: gray;
+            }
+    </style>
+</head>
+<body>
+    <h1>FAQs</h1>
+
+    <div class="faq">
+    <p>   Who invented HTML?</p>   <button class="pluss" onclick="mat()"> +</button>
+    </div>
+    <div id="mat" class="ans"> </div>
+
+        <div class="faq">
+        <P> Where did HTML start? </P> <button class="plus" onclick="matter()"> +</button>   
+        </div>
+        <div id="matter" class="ans"></div>
+        
+
+        <div class="faq">
+         <p> How fast can you learn HTML?</p> <button class="p" onclick="ext()">+</button>
+         </div>
+         <div id="ext" class="ans"></div>
+         
+
+</body>
+</html>
